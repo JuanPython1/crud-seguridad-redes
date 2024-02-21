@@ -19,9 +19,9 @@ try {
     console.log(`El error de conexion es : ${error}`)
 }
 
-// app.get('/', (req, res) => {
-//     res.send('Hola mundo')
-// })
+app.get('/', (req, res) => {
+    res.send('Hola mundo')
+})
 
 
 app.listen(PORT, () => {
