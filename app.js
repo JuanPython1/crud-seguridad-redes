@@ -24,8 +24,6 @@ try {
 // })
 
 
-
-
 app.listen(PORT, () => {
     console.log('Server UP running in', PORT)
 } )
