@@ -2,9 +2,13 @@ import {Sequelize} from 'sequelize'
 import { DB_HOST, DB_PASSWORD, DB_PORT, DB_USERNAME, DB_DATABASE } from '../config.js'
 
 
-const db= new Sequelize(DB_DATABASE, DB_USERNAME, DB_PASSWORD, {  
-    dialect: 'mysql',
-    host: DB_HOST
+const db= new Sequelize({
+    username: DB_USERNAME, 
+    password: DB_PASSWORD,
+    database: DB_DATABASE,
+    host: DB_HOST,
+    port: DB_PORT,
+    dialect: 'mysql'
 })
 
 export default db
